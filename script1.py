@@ -26,7 +26,6 @@ all[0].find("h4",{"class":"propPrice"}).text.replace("\n","").replace(" ","")
 
 page_nr=soup.find_all("a",{"class":"Page"})[-1].text
 print(page_nr)
-#print(all)
 l=[]
 
 base_url="http://pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/#t=0&s="
@@ -69,7 +68,6 @@ for page in range(0,int(page_nr)*10,10):
 				if "Lot Size" in feature_group.text:
 					d["Lot Size"] = feature_name.text
 		l.append(d)
-		#print(l)
 
 import pandas
 df=pandas.DataFrame(l)
