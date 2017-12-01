@@ -1,4 +1,18 @@
+''' 
+	Requests allow you to send HTTP/1.1 requests. 
+	You can add headers, form data, multipart files, and parameters 
+	with simple Python dictionaries, and access the response data in the same way.
+'''
+
 import requests
+
+''' 
+Beautiful Soup is a Python library for pulling data 
+out of HTML and XML files. It works with your favorite parser t
+o provide idiomatic ways of navigating, searching, and modifying the parse tree. 
+It commonly saves programmers hours or days of work.
+'''
+
 from bs4 import BeautifulSoup
 
 r = requests.get("http://pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/")
